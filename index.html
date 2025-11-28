@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アイテム追加プラグイン</title>
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #f5f5f5;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    .images {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .images img {
+        width: 50%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* スマホで縦になりすぎないように調整 */
+    @media (max-width: 600px) {
+        .images {
+            flex-direction: row;
+        }
+        .images img {
+            width: 50%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="title">Item カテゴリ</div>
+
+    <div class="images">
+        <img src="item/stack.png">
+        <img src="item/physics.png">
+    </div>
+
+    <div class="desc">
+        ItemStack   : 手に持ってるアイテムが64個になります。<br>
+        ItemPhysics : ワールド内に落ちてるアイテムがぺったんこになります。
+    </div>
+</div>
+<div class="card">
+    <div class="title">ModMenu カテゴリ</div>
+
+    <div class="images">
+        <img src="modmenu/custom.png">
+        <img src="modmenu/boots.png">
+    </div>
+
+    <div class="desc">
+        CustomMenu : 色んなアイテムが設定されてるモッドメニューです。<br>
+        SpeedBoots : スピードブーツが10%～100%まで設定されてるモッドメニューです。
+    </div>
+</div>
+<div class="card">
+    <div class="title">AddMenu カテゴリ</div>
+
+    <div class="images">
+        <img src="addmenu/block.png">
+        <img src="addmenu/oramo.png">
+    </div>
+
+    <div class="desc">
+        BlockItem   : 建築ページに普段出せないようなアイテムが追加されます。<br>
+        OrangeArmor : 武器ページにオレンジ色の壊れない防具が追加されます。
+    </div>
+</div>
+<div class="card">
+    <div class="title">Model カテゴリ</div>
+
+    <div class="images">
+        <img src="model/wing.png">
+    </div>
+
+    <div class="desc">
+        Wings   : 自分視点でアニメーションの羽が追加されます。
+    </div>
+</div>
+<div class="card">
+    <div class="title">Dev カテゴリ</div>
+
+
+    <div class="desc">
+        Exit   : ホームメニューへ戻ります。
+    </div>
+</div>
+
+</body>
+</html>
